@@ -4,33 +4,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Hello World!</title>
-	<style>
-	li,hr {
-		color: purple;
-	}
-	p {
-		font-size: 18px;
-		width: 300px;
-	}
-	h1 {
-		font-size: 50px;
-	}
-	#Spght {
-		font-size: 40px;
-		color: green;
-		background-color: #FFFF00;
-	}
-	div > span {
-		font-style: italic;
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>			/*vince sullo style.css*/
+	h1 { 		
+		font-size: 20px; 
 	}
 </style>
 </head>
 <body>
 	<header>Ciao&nbsp;sono&nbsp;un&nbsp;header</header>
-	<nav>e io sono un nav</nav>
+	<div><nav><span>e io sono un nav</span></nav></div>
 <div>DIV2</div>
 <span>SPAN1</span>
-<div><span>SPAN2</span>DIV3</div>
+<div><span>SPAN2<span><p>SPAN2.1</p></span></span>DIV3</div>
 <h1>Hello!</h1>
 <p id=testo>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -58,7 +44,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</ol>
 </div>
 <span><a href="pagina1.html" title="Link di prova" target="_blank">Ecco un link</a>, provalo!</span>
-<div><a href="http://www.google.it" title="Link esterno di prova" target="_blank">E se inserissi quello assoluto?</a></div>
+<div><a id="ext" href="http://www.google.it" title="Link esterno di prova" target="_blank">E se inserissi quello assoluto?</a></div>
 <hr>
 <span>&copy; Poldo</span>
 </body>

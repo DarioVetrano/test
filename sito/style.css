@@ -1,41 +1,53 @@
-	* {
-		box-sizing: border-box;
-	}
+* {
+	box-sizing: border-box;
+}
 
-	body{
-		font-family: Helvetica;
+body{
+	font-family: Helvetica;
+}
+li,hr, div > span {
+	color: purple;
+}
+#testo {
+	width: 1000px;
+}
+p {
+	font-size: 18px;
+	width: 300px;
+}
+a:link, a:visited{
+	color: blue;
+}
+a:hover{
+	background-color: goldenrod;
+}
+a#ext{
+	display: block;
+}
+h1 {
+	font-size: 50px;
+}
+#Spght {
+	font-size: 40px;
+	color: green;
+	background-color: #FFFF00;
+}
+div > span {
+	font-style: italic;
+	background-color: lightpink;
+}
+div li:nth-child(2){
+	color: darkblue;
+}
+
+@media (max-width: 480px) {
+	div{
+		color: goldenrod;
 	}
-	li,hr, div > span {
-		color: purple;
+}
+
+@media (min-width: 481px) {
+	div{
+		color: lightpink;
 	}
-	#testo {
-		width: 1000px;
-	}
-	p {
-		font-size: 18px;
-		width: 300px;
-	}
-	a:link, a:visited{
-		color: blue;
-	}
-	a:hover{
-		background-color: goldenrod;
-	}
-	a#ext{
-		display: block;
-	}
-	h1 {
-		font-size: 50px;
-	}
-	#Spght {
-		font-size: 40px;
-		color: green;
-		background-color: #FFFF00;
-	}
-	div > span {
-		font-style: italic;
-		background-color: lightpink;
-	}
-	div li:nth-child(2){
-		color: darkblue;
-	}
+}

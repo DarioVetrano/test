@@ -6,9 +6,55 @@
 	<title>Hello World!</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>			/*vince sullo style.css*/
+	
+
 	h1 { 		
 		font-size: 20px; 
 	}
+	#box{
+		background-image: url("https://cdn.cosedicasa.com/wp-content/uploads/2016/05/bassotto.jpg");
+		background-repeat: no-repeat;
+		background-size: 60%;
+		background-position: top center;
+		height: 300px;
+		padding-top: 100px;
+	}
+	#testo {
+		background-color: mintcream;
+		box-sizing: border-box;
+		width: 500px;
+		text-align: center;
+		margin: 0 40%;
+		border: solid lightpink;
+		height: 100px;
+		overflow: auto;
+	}
+	
+	.f {
+		width: 50%;
+		height: 50px;
+		border: 2px solid violet;
+	}
+
+	#p1,#p3,#p5{
+		float: left;
+		background: lightgray;
+		clear: left;
+	}
+
+	#p2,#p4{
+		float: right;
+		background: white;
+	}
+
+	#flo {
+		background: lightseagreen;
+	}
+
+	#sect{
+		clear: both;
+	}
+
 </style>
 </head>
 <body>
@@ -16,14 +62,15 @@
 	<div><nav><span>e io sono un nav</span></nav></div>
 <div>DIV2</div>
 <span>SPAN1</span>
-<div><span>SPAN2<span><p>SPAN2.1</p></span></span>DIV3</div>
+<div><span>SPAN2<span>SPAN2.1</span></span>DIV3</div>
 <h1>Hello!</h1>
+<div id=box>
 <p id=testo>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
 <div>ecco una lista:
 		<ul><li>Uova</li>
 		<li>Latte</li>
@@ -40,12 +87,19 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<li>Aggiungere il sale -&gt;</li>
 			<li>Mettere la pasta</li>
 			<li>Attendere il tempo di cottura</li>
-			<li>Scolare &amp; condire</li>
+			<li style="font-weight:bold";>Scolare &amp; condire</li>
 		</ol>
 </div>
 <span><a href="pagina1.html" title="Link di prova" target="_blank">Ecco un link</a>, provalo!</span>
 <div><a id="ext" href="http://www.google.it" title="Link esterno di prova" target="_blank">E se inserissi quello assoluto?</a></div>
-<hr>
-<span>&copy; Poldo</span>
+
+<div id="flo">
+		<p id="p1" class="f">Lorem</p>
+		<p id="p2" class="f">ipsum</p>
+		<p id="p3" class="f">dolor</p>
+		<p id="p4" class="f">sit</p>
+		<p id="p5" class="f">amet</p>
+		<section id="sect">Questo testo</section>
+</div>
 </body>
 </html>
